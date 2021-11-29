@@ -1,0 +1,17 @@
+{% extends 'partials/base.html' %}
+
+{%block mainblock%}
+<form method = 'post'>
+    {% csrf_token %}
+    <ul>
+{% for film in object_list %}
+        <li>Film Title: {{ film.title }}</li>
+        <li>Film Director: {{ film.directors.name }}</li>
+        <li>Film Director: {{ film.directors.name }}</li>
+        <li>Film Category: {{ film.categories.name }}<br><hr></li>
+{% endfor %}
+    </ul>
+</form>
+
+
+{% endblock %}

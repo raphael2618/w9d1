@@ -1,0 +1,5 @@
+manage.py
+.idea
+myenv/
+db.sqlite3
+seed.py
